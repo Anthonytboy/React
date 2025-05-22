@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="shortcut icon" href="React Jobs/th (1).webp" type="">
+  <title>Add-Jobs</title>
+</head>
+<body>
+ 
+  <!-- Nav-Bar -->
+  <nav class="bg-indigo-700 border-b border-indigo-500">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="flex h-20 items-center justify-betwwen">
+        <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
+          <!-- Logo -->
+           <a href="index.html" class="flex flex-shrink-0 items-center mr-4"><img src="React Jobs/th (1).webp" class="w-13 rounded-xl" alt="Logo"> <span class="hidden md:block text-white text-2xl font-bold ml-2">React Jobs</span> </a>
+
+           <!-- Menu Items -->
+            <div class="md:ml-auto">
+              <div class="flex space-x-2">
+              <a href="index.html" class="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2">Home</a>
+              <a href="jobs.html" class="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2">Jobs</a>
+              <a href="Add-Job.html" class="text-white bg-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2">Add Job</a>
+
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Form Section -->
+ <section class="bg-blue-50 px-4 py-10">
+  <div class="container m-auto shadow-md bg-white rounded-lg max-w-2xl font-sans">
+    <h2 class="text-3xl font-bold text-black my-6 text-center py-6">Add Job</h2>
+  <form action="" class="max-w-xl mx-auto">
+  <label for="Job" class="font-bold mb-2">Job Type </label>
+  <select name="Job" id="Job" class="w-full border border-gray-300 rounded-lg p-2 my-4">
+    <option value="Full-Time">Full-Time</option>
+    <option value="Part-Time">Part-Time</option>
+    <option value="Internship">Internship</option>
+    </select>
+   <label for="Listing" class="font-bold mb-2">Job Listing Name </label>
+    <input type="text" id="Job" name="Job" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="eg. Beautiful Apartment in Miami" required>
+    <label for="Description" class="font-bold mb-2">Description</label>
+    <textarea id="Description" name="Description" class="w-full border border-gray-300 rounded-lg p-2 my-4" rows="4" placeholder="Add any job duites, expectations, requirement, etc" required></textarea>
+    <label for="Salary" class="font-bold pb-2">Salary</label>
+    <select name="Salary" id="Salary" class="w-full border border-gray-300 rounded-lg p-2 my-4" >
+    <option value="0-20k">Under $50k</option>
+    <option value="20k-40k">$50k-$60k</option>
+    <option value="40k-60k">$60k-$70k</option>
+    <option value="60k-80k">$70k-$80k</option>
+    <option value="80k-100k">$80k-9$0k</option>
+    <option value="100k+">$90k-$100k</option>
+    <option value="100k+">$100k-$125k</option>
+    <option value="100k+">$125k-$150k</option>
+    <option value="100k+">$150k-$175k</option>
+    <option value="100k+">$175k-$200k</option>
+    <option value="100k+">Over $200k</option>
+    </select>
+    <label for="Location" class="font-bold mb-2">Location</label>
+    <input type="text" id="Location" name="Location" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="Company Location" required>
+    <div class="text-3xl text-black py-5">Company Info</div>
+    <label for="Company" class="font-bold mb-2">Company Name</label>
+    <input type="text" id="Company" name="Company" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="Company Name" required>
+    <label for="Website" class="font-bold mb-2">Company Description</label>
+    <textarea id="Website" name="Website" class="w-full border border-gray-300 rounded-lg p-2 mb-4" rows="4" placeholder="What does your company do?" required></textarea>
+    <label for="Website" class="font-bold mb-2">Company Email</label>
+    <input type="email" id="Website" name="Website" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="Email address for applicants" required>
+    <label for="Website" class="font-bold mb-2">Company Phone</label>
+    <input type="tel" id="Website" name="Website" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="Optional phone for applicants">
+  </form>
+   <!-- add jobs -->
+    <div class="mx-auto max-w-xl px-6 pb-9 mb-5">
+      <a href="jobs.html" class="block bg-indigo-500 font-bold text-white text-center py-2 px-12 rounded-full hover:bg-indigo-700">Add Job</a>
+    </div>
+  </div>
+  
+ </section>
+
+
+     <!-- Footer -->
+     <footer class="bg-indigo-700 border-b border-indigo-500 lg:sticky bottom-0">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-4">
+        <div class="flex items-center justify-center">
+          <p class="text-white text-3xl font-bold">React &copy; 2025</p>
+        </div>  
+     </footer>
+    
+  </body>
