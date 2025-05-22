@@ -209,6 +209,9 @@
   .relative {
     position: relative;
   }
+  .sticky {
+    position: sticky;
+  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
@@ -260,6 +263,9 @@
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
+  .m-20 {
+    margin: calc(var(--spacing) * 20);
+  }
   .m-auto {
     margin: auto;
   }
@@ -280,6 +286,9 @@
   }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
+  }
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -319,6 +328,12 @@
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
@@ -540,6 +555,15 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
+  .py-30 {
+    padding-block: calc(var(--spacing) * 30);
+  }
+  .py-35 {
+    padding-block: calc(var(--spacing) * 35);
+  }
+  .pt-0 {
+    padding-top: calc(var(--spacing) * 0);
+  }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
   }
@@ -692,6 +716,11 @@
       max-width: var(--container-md);
     }
   }
+  .sm\:max-w-xl {
+    @media (width >= 40rem) {
+      max-width: var(--container-xl);
+    }
+  }
   .sm\:px-6 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 6);
@@ -701,6 +730,11 @@
     @media (width >= 40rem) {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .md\:sticky {
+    @media (width >= 48rem) {
+      position: sticky;
     }
   }
   .md\:col-span-2 {
