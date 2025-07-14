@@ -35,49 +35,62 @@
 
 <!-- Form Section -->
  <section class="bg-blue-50 px-4 py-30">
-  <div class="container m-auto shadow-md bg-white rounded-lg max-w-2xl font-sans">
+  <div class="container mx-auto shadow-md bg-white rounded-lg max-w-2xl font-sans">
     <h2 class="text-3xl font-bold text-black my-6 text-center py-6">Add Job</h2>
-  <form action="" class="max-w-xl mx-auto p-5">
-  <label for="Job" class="font-bold mb-2">Job Type </label>
-  <select name="Job" id="Job" class="w-full border border-gray-300 rounded-lg p-2 my-4">
-    <option value="Full-Time">Full-Time</option>
-    <option value="Part-Time">Part-Time</option>
-    <option value="Internship">Internship</option>
-    </select>
-   <label for="Listing" class="font-bold mb-2">Job Listing Name </label>
-    <input type="text" id="Job" name="Job" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="eg. Beautiful Apartment in Miami" required>
-    <label for="Description" class="font-bold mb-2">Description</label>
-    <textarea id="Description" name="Description" class="w-full border border-gray-300 rounded-lg p-2 my-4" rows="4" placeholder="Add any job duites, expectations, requirement, etc" required></textarea>
-    <label for="Salary" class="font-bold pb-2">Salary</label>
-    <select name="Salary" id="Salary" class="w-full border border-gray-300 rounded-lg p-2 my-4" >
-    <option value="0-20k">Under $50k</option>
-    <option value="20k-40k">$50k-$60k</option>
-    <option value="40k-60k">$60k-$70k</option>
-    <option value="60k-80k">$70k-$80k</option>
-    <option value="80k-100k">$80k-9$0k</option>
-    <option value="100k+">$90k-$100k</option>
-    <option value="100k+">$100k-$125k</option>
-    <option value="100k+">$125k-$150k</option>
-    <option value="100k+">$150k-$175k</option>
-    <option value="100k+">$175k-$200k</option>
-    <option value="100k+">Over $200k</option>
-    </select>
-    <label for="Location" class="font-bold mb-2">Location</label>
-    <input type="text" id="Location" name="Location" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="Company Location" required>
-    <div class="text-3xl text-black py-5">Company Info</div>
-    <label for="Company" class="font-bold mb-2">Company Name</label>
-    <input type="text" id="Company" name="Company" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="Company Name" required>
-    <label for="Website" class="font-bold mb-2">Company Description</label>
-    <textarea id="Website" name="Website" class="w-full border border-gray-300 rounded-lg p-2 mb-4" rows="4" placeholder="What does your company do?" required></textarea>
-    <label for="Website" class="font-bold mb-2">Company Email</label>
-    <input type="email" id="Website" name="Website" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="Email address for applicants" required>
-    <label for="Website" class="font-bold mb-2">Company Phone</label>
-    <input type="tel" id="Website" name="Website" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="Optional phone for applicants">
-  </form>
-   <!-- add jobs -->
-    <div class="mx-auto max-w-xl px-6 pb-9 mb-5">
-      <a href="jobs.html" class="block bg-indigo-500 font-bold text-white text-center py-2 px-12 rounded-full hover:bg-indigo-700">Add Job</a>
-    </div>
+    <form onsubmit="AddJob(); return false;" class="max-w-xl mx-auto p-5">
+      
+      <label for="Job" class="font-bold mb-2">Job Type</label>
+      <select id="Job" name="Job" class="w-full border border-gray-300 rounded-lg p-2 my-4" required>
+        <option value="Remote">Remote</option>
+        <option value="Full-Time">Full-Time</option>
+        <option value="Part-Time">Part-Time</option>
+        <option value="Internship">Internship</option>
+      </select>
+
+      <label for="Jobs" class="font-bold mb-2">Job Listing Name</label>
+      <input type="text" id="Jobs" name="JobListing" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="e.g. Software Developer in Lagos" required>
+
+      <label for="Description" class="font-bold mb-2">Description</label>
+      <textarea id="Description" name="Description" class="w-full border border-gray-300 rounded-lg p-2 my-4" rows="4" placeholder="Add duties, expectations, requirements, etc" required></textarea>
+
+      <label for="Salary" class="font-bold pb-2">Salary</label>
+      <select name="Salary" id="Salary" class="w-full border border-gray-300 rounded-lg p-2 my-4" required>
+        <option value="under-50k">Under $50k</option>
+        <option value="50k-60k">$50k-$60k</option>
+        <option value="60k-70k">$60k-$70k</option>
+        <option value="70k-80k">$70k-$80k</option>
+        <option value="80k-90k">$80k-$90k</option>
+        <option value="90k-100k">$90k-$100k</option>
+        <option value="100k-125k">$100k-$125k</option>
+        <option value="125k-150k">$125k-$150k</option>
+        <option value="150k-175k">$150k-$175k</option>
+        <option value="175k-200k">$175k-$200k</option>
+        <option value="200k+">Over $200k</option>
+      </select>
+
+      <label for="Location" class="font-bold mb-2">Location</label>
+      <input type="text" id="Location" name="Location" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="Company Location" required>
+
+      <div class="text-2xl font-semibold text-black py-5">Company Info</div>
+
+      <label for="Company" class="font-bold mb-2">Company Name</label>
+      <input type="text" id="Company" name="Company" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="Company Name" required>
+
+      <label for="CompanyDescription" class="font-bold mb-2">Company Description</label>
+      <textarea id="CompanyDescription" name="CompanyDescription" class="w-full border border-gray-300 rounded-lg p-2 mb-4" rows="4" placeholder="What does your company do?" required></textarea>
+
+      <label for="Email" class="font-bold mb-2">Company Email</label>
+      <input type="email" id="Email" name="Email" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="Email address for applicants" required>
+
+      <label for="Number" class="font-bold mb-2">Company Phone</label>
+      <input type="number" id="Number" name="Phone" class="w-full border border-gray-300 rounded-lg p-2 my-4" placeholder="Optional phone for applicants" required>
+
+      <div class="mt-6">
+        <button type="submit" class="w-full bg-indigo-500 font-bold text-white text-center py-2 px-12 rounded-full hover:bg-indigo-700">
+          Add Job
+        </button>
+      </div>
+    </form>
   </div>
   
  </section>
@@ -90,5 +103,8 @@
           <p class="text-white text-3xl font-bold">React &copy; 2025</p>
         </div>  
      </footer>
+
+
+     <script src="Script.js" lang="JavaScript" defer></script>
     
   </body>

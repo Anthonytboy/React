@@ -1,0 +1,9 @@
+#span1 #span2 #span3 {
+  display: none;
+}
+
+#btnmr #btnmr2 #btnmr3 {
+  cursor: pointer;
+  display: block;
+  margin-top: 5px;
+}

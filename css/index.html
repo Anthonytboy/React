@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New JavaScript</title>
+</head>
+<body>
+
+
+
+
+
+<!-- <input type="button" value="Count" style="color: red; background-color: black; border-radius: 6px;" onclick="myFunction()" />
+
+<p id="demo">0</p> -->
+
+
+
+
+
+
+
+
+ <script type="text/javascript">
+
+
+ 	const promise = fetch('books.json');
+
+ 	// add a fulfillment and rejection handles
+
+ 	promise.then(response => {
+ 		//fulfillment
+ 		console.log(response.status);
+ 	}, reason => {
+ 		//rejection 
+ 		console.log(reason.message);
+ 	});
+
+ 	// add another fulfillment handler
+ 	promise.then(response => {
+ 		//fulfillment
+ 		console.log(response.statusText)
+ 	});
+
+ 	//add another rejection handler 
+ 	promise.then(null, reason => {
+ 		//rejection
+ 		console.log(reason.message);
+ 	});
+
+
+
+
+ 	// class Car {
+ 	// 	constructor(brand) {
+ 	// 		this.carname = brand;
+ 	// 	}
+ 	// 	present() {
+ 	// 		return 'I have a ' + this.carname;
+ 	// 	}
+ 	// }
+
+ 	// class Model extends Car {
+ 	// 	constructor(brand, mod) {
+ 	// 		super(brand);
+ 	// 		this.model = mod;
+ 	// 	}
+
+ 	// 	show() {
+ 	// 		return this.present() + ', it is a ' + this.model
+ 	// 	}
+ 	// }
+
+ 	// let myCar = new Model('Porshe', '911 Carrera');
+ 	// console.log(myCar.show());
+
+// class Car {
+// 	constructor(brand) {
+// 		this._carname = brand;
+// 	}
+// 	get carname() {
+// 		return this._carname
+// 	}
+// 	set carname(x) {
+// 		this._carname = x
+// 	}
+// }
+
+// const myCar = new Car('Porsche')
+// myCar.carname = 'BMW'
+
+// console.log(myCar.carname);
+
+   
+
+
+
+ 	
+
+//  	function myCounter() {
+//   let counter = 0;
+//   return function() {
+//     counter++;
+//     return counter;
+//   };
+// }
+
+// const add = myCounter();
+
+// function myFunction(){
+//   document.getElementById("demo").innerHTML = add();
+// }
+
+ 	// function mycount() {
+ 	// 	let counter = 0;
+ 	// 	return function() {
+ 	// 		counter++;
+ 	// 		return counter;
+ 	// 	};
+ 	// }
+ 	// let add = mycount()
+ 	// document.write(add())
+ 	
+
+
+//  	"use strict"
+// // Create Object
+// const person = {firstName:"John", lastName:"Doe"};
+
+// // Prevent Extensions
+// Object.preventExtensions(person)
+
+// // Test Error
+// let text = "";
+// try {
+//   person.nationality = "English";
+// }
+// catch (err) {
+//   text = err;
+// }
+
+// console.log(text)
+
+// // Create an object: Set Example
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   language: "",
+//   set lang(lang) {
+//     this.language = lang;
+//   }
+// };
+
+// // Set an object property using a setter:
+// person.lang = "english";
+
+// // Display data from the object:
+// console.log(person.language)
+
+
+//  	// Create an object: Get Example
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   language: "en",
+//   get lang() {
+//     return this.language;
+//   }
+// };
+
+// // Display data from the object using a getter:
+// console.log(person.lang)
+
+
+
+
+
+/*// Create an Object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "EN"
+};
+
+// Set the language Property not enumerable
+Object.defineProperty(person, "language", {enumerable:false});
+
+// Display all Properties
+console.log(Object.getOwnPropertyNames(person));
+//Display all enumerable properties
+console.log(Object.keys(person));
+
+*/
+
+
+
+
+
+
+ </script>
+</body>
+</html>
